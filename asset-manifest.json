@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Rick-and-Morty-LIVE/static/css/main.c4845154.css",
+    "main.js": "/Rick-and-Morty-LIVE/static/js/main.1fffaf00.js",
+    "static/media/rick-and-morty-portal.png": "/Rick-and-Morty-LIVE/static/media/rick-and-morty-portal.b70a3db8d05cec61cb5d.png",
+    "index.html": "/Rick-and-Morty-LIVE/index.html",
+    "main.c4845154.css.map": "/Rick-and-Morty-LIVE/static/css/main.c4845154.css.map",
+    "main.1fffaf00.js.map": "/Rick-and-Morty-LIVE/static/js/main.1fffaf00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4845154.css",
+    "static/js/main.1fffaf00.js"
+  ]
+}
