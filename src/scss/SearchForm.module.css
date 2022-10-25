@@ -1,0 +1,14 @@
+.form__container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: min(100%, 800px);
+}
+.form__container input, .form__container select, .form__container button {
+  background: #ffffff;
+  border: 1px solid #006c90;
+  width: max(20%, 150px);
+  height: 30px;
+  padding: 5px;
+  margin-right: 5px;
+}

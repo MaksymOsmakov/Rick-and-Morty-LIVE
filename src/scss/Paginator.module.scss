@@ -1,0 +1,19 @@
+@import "./var.scss";
+.paginator__wrapper {
+	text-align: center;
+	position: sticky;
+	bottom: 0;
+}
+.paginator__btn {
+	margin: 4px 10px 4px 0px;
+	padding: 4px;
+	background: none;
+	color: $link-color;
+	font-weight: bold;
+	border: solid 1px rgb(0, 0, 0);
+	border-radius: 3px;
+	cursor: pointer;
+	&:hover {
+		@include a-hover;
+	}
+}
