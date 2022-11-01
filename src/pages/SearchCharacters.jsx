@@ -29,7 +29,17 @@ const SearchCharacters = () => {
 			fetchCharacters({ page, name, status, gender })
 	}, [fetchCharacters, gender, name, page, status]);
 
-
+	const pagesCount = () => {
+		let count = 10
+		if (data) {
+			if (count > data.info.pages) {
+				count = data.info.pages
+				return count
+			}
+		}
+		return count
+	}
+	let pagesCountForPaginator = pagesCount()
 	return (
 		<>
 			<SearchForm handleSubmit={searchCharacters} />
@@ -38,7 +48,7 @@ const SearchCharacters = () => {
 			{isLoading && <p style={{ fontSize: '2em', textAlign: 'center' }}>Loading...</p>}
 
 			{data && <CharacterCard person={data.results} info={data.info} />}
-			{data && <Paginator onPageChanged={handleChanged} pagesCount={data.info.pages} portionSize={10} totalItemsCount={data.info.count} key={data.info} />}
+			{data && <Paginator onPageChanged={handleChanged} pagesCount={data.info.pages} portionSize={pagesCountForPaginator} totalItemsCount={data.info.count} key={data.info} />}
 		</>
 	);
 };

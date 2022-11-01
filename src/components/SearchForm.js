@@ -34,7 +34,7 @@ const SearchForm = ({ handleSubmit }) => {
 				</select>
 			</div>
 			<div>
-				<button onClick={onSubmit}>Search</button>
+				<button onClick={onSubmit} >Search</button>
 			</div>
 		</form>
 	);
